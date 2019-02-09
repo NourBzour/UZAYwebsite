@@ -1,0 +1,25 @@
+ .image-text{
+  text-align: center;
+  position: absolute;
+  top: 35%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+  .back-image {
+  background-image: url("vanGogh.jpg");
+  height:80.5%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 120%;
+  position: relative;
+  }
+  .back-image .image-text{ 
+     visibility:hidden;
+}
+  .back-image:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("vanGogh.jpg");
+  }
+ .back-image:hover .image-text{
+   visibility: visible;
+ }
