@@ -1,59 +1,70 @@
+*{
+margin: 0px;
+padding:0px;
+}
+body, html {
+  height: 100%;
+}
 .navbar {
   overflow: hidden;
   background-color: black;
 }
 .right{
-	 float: right;
-}
-.left{
-	float: left;
-}
-.navbar a {
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+   float: right;
 }
 
+.navbar a {
+  font-size: 20.4px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+.left{
+  float: left;
+  padding-left: 20px;
+  padding-top: 13px;
+}
 .drop-down {
   right: 0;
   overflow: hidden;
 }
 
 .drop-down .drop-down-btn {
-  font-size: 16px;  
+  font-size: 20.5px;  
   border: none;
   outline: none;
   color: white;
-  padding: 14px 16px;
+  padding: 14px 23px;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
 }
 
-.navbar a:hover, .drop-down:hover .drop-down-btn {
+.navbar .drop-down:hover .drop-down-btn {
   background-color: gray;
 }
 
 .drop-down-content {
-  right :0;
+  font-size: 10%;
+  right :0; 
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 140px;
+  min-width: 150px;
   overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow:1px 6px 8px rgba(0,0,0,1);
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
   z-index: 1;
 }
 
 .drop-down-content a {
   color: black;
-  padding: 12px 16px;
   text-decoration: none;
   display: block;
   text-align: left;
-}
+  padding : 13px 5px;
+ }
 
 .drop-down-content a:hover {
   background-color: #ddd;
@@ -64,14 +75,44 @@
 }
 @media only screen and (max-width: 600px) {
   .hide-small{
-  	 display :none;
+     display :none;
   }
 }
 @media only screen and (min-width: 601px) {
   .hide-large{
-  	 display :none;
+     display :none;
   }
   .hide-medium{
-  	display: none;
+    display: none;
   }
+  .wheader{  
+      width : 100%;
+      hight:200px;
+      background:url(background.jpg);
+      text-align: center;
+  }
+ .image-text{
+  text-align: center;
+  position: absolute;
+  top: 35%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
+  .back-image {
+  background-image: url("vanGogh.jpg");
+  height:80.5%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 120%;
+  position: relative;
+  }
+  .back-image .image-text{ 
+     visibility:hidden;
+}
+  .back-image:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("vanGogh.jpg");
+  }
+ .back-image:hover .image-text{
+   visibility: visible;
+ }
